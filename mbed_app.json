@@ -1,0 +1,16 @@
+{
+    "requires": [
+        "bare-metal"
+    ],
+    "macros": [
+    ],
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate"                  : 9600,
+            "platform.stdio-convert-newlines"           : true,
+            "platform.stdio-buffered-serial"            : true,
+            "platform.stdio-flush-at-exit"              : true,
+            "target.printf_lib"                         : "std"
+        }
+    }
+}
